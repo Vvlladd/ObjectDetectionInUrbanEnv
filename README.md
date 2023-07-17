@@ -27,11 +27,10 @@ Data are in **TFRecord** Format, the TFRecord format is a simple format for stor
 ### Model Selection
 For this project, I tested several object detection models using the Tensorflow Object Detection API. The models tested were:
 
-|         **Model**        	|  **Config**  	|
-|:------------------------:	|:------------:	|
-| EfficientNet D1          	| [file](model1-effecientNet\pipeline.config) 	|
-| SSD MobileNet V2 FPNLite 	| [file](model2-mobileNet\pipeline.config) 	|
-| SSD ResNet50 V1 FPN       | [file](model3-Resnet\pipeline.config) 	|
+[EfficientNet D1](https://github.com/Vvlladd/ObjectDetectionInUrbanEnv/blob/main/model1-effecientNet/pipeline.config)
+ 
+[SSD MobileNet V2 FPNLite](https://github.com/Vvlladd/ObjectDetectionInUrbanEnv/blob/main/model2-mobileNet/pipeline.config) 	
+[SSD ResNet50 V1 FPN](https://github.com/Vvlladd/ObjectDetectionInUrbanEnv/blob/main/model3-Resnet/pipeline.config)
 
 These pre-trained models are available in the TensorFlow 2 Object Detection Model Zoo, and they were trained on the COCO 2017 dataset. 
 So,  their `pipeline.config` files need to be adjusted so TensorFlow 2 can find the `TFRecord` and `label_map.pbtxt` files when they are loaded inside the container from Amazon S3.
