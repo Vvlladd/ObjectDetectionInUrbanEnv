@@ -38,9 +38,7 @@ So,  their `pipeline.config` files need to be adjusted so TensorFlow 2 can find 
  
 Since the Waymo dataset has only 3 classes, Cars, Pedestrians, and Cyclists, the `pipeline.config` was adjusted to the project specifications instead of the 90 classes that were there for the COCO dataset.
 
-For the 3 Models I used a fixed number of training steps which is **2000**, this was due to my limited AWS budget.
-
-Also, I used Momentum Optimizer with the same batch size of **8** in the 3 experiments, for the same reason.
+For the 3 Models I used a fixed number of training steps which is **2000**, this was due to limited AWS budget. I used Momentum Optimizer with the same batch size of **8** in the 3 experiments, for the same reason.
 
 ### Results
 Each model was evaluated using the mAP metric, which measures the accuracy of the model in detecting objects. The mAP is calculated based on the precision and recall of the model at different IoU (Intersection over Union) thresholds.
