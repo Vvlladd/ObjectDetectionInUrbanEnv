@@ -36,7 +36,7 @@ For this project, I tested several object detection models using the Tensorflow 
 These pre-trained models are available in the TensorFlow 2 Object Detection Model Zoo, and they were trained on the COCO 2017 dataset. 
 So,  their `pipeline.config` files need to be adjusted so TensorFlow 2 can find the `TFRecord` and `label_map.pbtxt` files when they are loaded inside the container from Amazon S3.
  
-Since the Waymo dataset has only 3 classes, Cars, Pedestrians, and Cyclists, the `pipeline.config` was adjusted to our problem instead of the 90 classes that were there for the COCO dataset.
+Since the Waymo dataset has only 3 classes, Cars, Pedestrians, and Cyclists, the `pipeline.config` was adjusted to the project specifications instead of the 90 classes that were there for the COCO dataset.
 
 For the 3 Models I used a fixed number of training steps which is **2000**, this was due to my limited AWS budget.
 
