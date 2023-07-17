@@ -30,6 +30,7 @@ For this project, I tested several object detection models using the Tensorflow 
 [EfficientNet D1](https://github.com/Vvlladd/ObjectDetectionInUrbanEnv/blob/main/model1-effecientNet/pipeline.config)
  
 [SSD MobileNet V2 FPNLite](https://github.com/Vvlladd/ObjectDetectionInUrbanEnv/blob/main/model2-mobileNet/pipeline.config) 	
+
 [SSD ResNet50 V1 FPN](https://github.com/Vvlladd/ObjectDetectionInUrbanEnv/blob/main/model3-Resnet/pipeline.config)
 
 These pre-trained models are available in the TensorFlow 2 Object Detection Model Zoo, and they were trained on the COCO 2017 dataset. 
