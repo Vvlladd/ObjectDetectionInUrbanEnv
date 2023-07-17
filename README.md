@@ -75,8 +75,14 @@ The plots show that the 3 models could achieve better loss if we increased the n
 
 ## Future Work & Possible Improvement
 
-We identified several potential avenues for improving performance, but they would require additional resources and a higher computing budget. These include:
-- Increase the training steps: Each model was trained for only 2000 steps, which is relatively low for such kinds of data and complex architectures. So, increasing the number of training steps till the loss reaches the plateau can further improve performance.
-- Data augmentation: techniques such as flipping, scaling, and random cropping. More advanced techniques such as color jittering, rotation, and translation can also be used to improve the model's accuracy.
-- Hyperparameter tuning: Fine-tuning the hyperparameters can potentially improve the model's performance.
-- Handling occlusion and partial object detection: In this project, we focused on detecting complete objects. However, in an urban environment, objects are often partially occluded or obstructed. Developing techniques to handle partial object detection can further improve the model's performance.
+Identified several potential avenues for improving performance, but they would require additional resources and a higher computing budget. These include:
+
+We can increase the training steps: Each model was trained for only 2000 steps, which is relatively low for such kinds of data and complex architectures. So, increasing the number of training steps till the loss reaches the plateau can further improve our performance.
+
+We can apply data augmentation techniques such as flipping, scaling, and random cropping. Additionally, we can explore more advanced techniques such as color jittering, rotation, and translation, which can further enhance the accuracy of our model.
+
+We should consider hyperparameter tuning. Fine-tuning the hyperparameters can potentially improve our model's performance by finding optimal values for parameters like learning rate, batch size, and regularization.
+
+Another area to focus on is handling occlusion and partial object detection. In this project, our focus was on detecting complete objects. However, in an urban environment, objects are often partially occluded or obstructed. Developing techniques to handle partial object detection can be crucial in improving the overall performance of our model.
+
+By addressing these areas, we can potentially achieve significant performance improvements, although it's important to note that they require additional resources and a higher computing budget.
